@@ -1,0 +1,10 @@
+gcc -std=c99 -g -O1 code.c  -o ./code.x
+./run_loop_xform.x
+00: Unswitching: test_I_tensor_DFT2_unswitch: PASS
+01: Loop Peeling: test_axpy_sftwr_pipelin_peel: PASS
+02: Index Set Splitting: test_rotate_no_mod_index_set_splitting: PASS
+03: Loop Fusion: test_apply_weight_then_activate_fusion: PASS
+04: Loop Fission: test_deinterleave_fission: PASS
+05: Loop Interchange: test_matvec_4x4_colmaj_8xfloat: PASS
+06: Strip Mining: test_axpy_stripmine: PASS
+07: Skewing: test_blur_skew: PASS
